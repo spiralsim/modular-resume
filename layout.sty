@@ -1,0 +1,39 @@
+\moderncvtheme[black, sans]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\recomputelengths
+
+\firstname{Jeffrey}
+\familyname{Tong}
+\mobile{(123) 456-7890}
+\email{oski@berkeley.edu}
+\social[github]{spiralsim}
+\social[linkedin]{oski-bear-321116164}
+
+\makeatletter
+% Path is relative to the .tex file in /templates using this, not this file itself
+\def\input@path{{../../entries}}
+\makeatother
+
+\newenvironment{resume}{
+	\maketitle
+
+	\vspace{-3em}
+
+	\section{Education}
+	\cventry{2022--2025}{B.S. Electrical Engineering and Computer Sciences (EE/CS)}{UC Berkeley}{}{3.814/4.000}
+	{
+		\textbf{Relevant Coursework}: \textbf{CS 61A:} Structure and Interpretation of Computer Programs (Python, SQL), \textbf{CS 61B:} Data Structures (Java), \textbf{CS 61C:} Computer Architecture (C, RISC-V), \textbf{EECS 16A/B:} Designing Information Devices and Systems I/II (Jupyter, Arduino), \textbf{CS 70:} Discrete Mathematics and Probability Theory, \textbf{CS 161:} Computer Security, \textbf{CS 186:} Intro to Databases
+	}
+
+	\section{Computer Skills}
+	\cvline{Languages}{Python, Java, C++, JavaScript, HTML/CSS, SQL, Swift, TypeScript, LaTeX, C}
+	\cvline{Services}{Google Docs Editors, Microsoft Office Suite, Git, Heroku, Figma}
+	\cvline{Frameworks}{Node.js, Express.js, RedwoodJS, ReactJS}
+}
+{
+	\vfill
+	\begin{center}
+		\textit{Updated \today}
+	\end{center}
+}
